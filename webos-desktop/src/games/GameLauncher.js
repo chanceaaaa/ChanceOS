@@ -114,7 +114,7 @@ export class GameLauncher {
   }
 
   formatArchiveName(name, url) {
-    if (name && name !== "Yuki Game") return name;
+    if (name && name !== "Chance Game") return name;
     const n = url
       .split("/")
       .pop()

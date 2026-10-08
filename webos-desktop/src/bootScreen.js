@@ -9,7 +9,7 @@ import { $, $$, bindEvent, createElement, setStyle, addClass } from "./shared/do
 import { parseBool } from "./utils/utils.js";
 import { isFunction } from "./shared/functionUtils.js";
 
-const BRAND = "YukiOS";
+const BRAND = "Chance OS";
 const MIN_DURATION = 2500;
 
 export function showBootScreen() {

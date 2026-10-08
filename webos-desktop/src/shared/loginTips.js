@@ -22,7 +22,7 @@ export const LOGIN_TIPS = [
   "Windows 93 through Windows 11 can boot inside the virtual machine.",
   "Download torrents with magnet links in the built-in torrent client.",
   "Run python -m http.server in Terminal to serve your virtual files on localhost.",
-  "You can browse the YukiOS source code from inside YukiOS itself.",
+  "You can browse the Chance OS source code from inside Chance OS itself.",
   "Right-click the Start button to pick a custom Start icon or upload your own.",
   "Windows can wobble, shatter with Fall Apart, or wear XP and Vista headers.",
   "Set any TTF or OTF as your system font from the font preview.",
@@ -30,7 +30,7 @@ export const LOGIN_TIPS = [
   "Type neofetch in Terminal for a full readout of your virtual machine.",
   "The 3D room is a walkable world. Grab a game case and press F to launch it.",
   {
-    text: "Did you know YukiOS has an early version?",
+    text: "Did you know Chance OS has an early version?",
     linkUrl: "https://reeyuki.github.io/YukiOS-AlphaHistorical/desktop/",
     linkLabel: "Play the alpha"
   },

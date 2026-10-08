@@ -20,7 +20,7 @@ const capabilities = [
   {
     tag: "PLAY",
     title: "Games Library",
-    desc: "3000+ games via Yuki Steam integration, Flash (Ruffle), DOS (JS-DOS), and console emulation."
+    desc: "3000+ games via Chance Steam integration, Flash (Ruffle), DOS (JS-DOS), and console emulation."
   },
   {
     tag: "APPS",
@@ -40,7 +40,7 @@ const capabilities = [
 ];
 
 const privacyText = `
-  YukiOS collects limited anonymous analytics to help improve stability and usage insights.
+  Chance OS collects limited anonymous analytics to help improve stability and usage insights.
 
   Analytics providers:
   • Anonymous usage analytics
@@ -60,13 +60,13 @@ const privacyText = `
   • Understanding feature usage
   • Diagnosing issues and errors
 
-  YukiOS does not sell user data or share it with advertisers.
+  Chance OS does not sell user data or share it with advertisers.
 `;
 
 const copyrightText = `
   Copyright & Takedown Requests
 
-  YukiOS doesn't host any copyrighted content. Games and apps are loaded from their original sources or CDNs.
+  Chance OS doesn't host any copyrighted content. Games and apps are loaded from their original sources or CDNs.
 
   If you believe something here violates your rights, contact us at:
 
@@ -80,7 +80,7 @@ export class AboutApp extends BaseApp {
   }
 
   open(opts = {}) {
-    const win = os.window.create("about-yukios", "About YukiOS", "720px", "85vh", {
+    const win = os.window.create("about-yukios", "About Chance OS", "720px", "85vh", {
       icon: "fa fa-circle-info"
     });
 
@@ -91,7 +91,7 @@ export class AboutApp extends BaseApp {
           <div class="abx-top">
             <div class="abx-mark">
               <img class="abx-badge" src="${resolveIconUrl("static/icons/logo.png")}">
-              <h1 class="abx-title">YukiOS</h1>
+              <h1 class="abx-title">Chance OS</h1>
               <p class="abx-sub">
                 A browser-based desktop with apps, games, emulators, and a virtual filesystem.
               </p>
@@ -158,23 +158,9 @@ export class AboutApp extends BaseApp {
             </div>
 
             <div class="abx-panel">
-              <div class="abx-panel-h">Support YukiOS</div>
+              <div class="abx-panel-h">Credits and License</div>
               <div class="abx-panel-b">
-                <div class="abx-sponsor">
-                  <div class="abx-sponsor-icon">
-                    <i class="fab fa-github"></i>
-                  </div>
-                  <div class="abx-sponsor-content">
-                    <div class="abx-sponsor-title">Become a Sponsor</div>
-                    <div class="abx-sponsor-desc">Help keep YukiOS free and open source. Your support directly funds development.</div>
-                    <div class="abx-sponsor-buttons">
-                      <a href="https://www.patreon.com/Reeyuki" target="_blank" rel="noopener noreferrer" class="abx-sponsor-btn abx-sponsor-btn-patreon"><i class="fab fa-patreon"></i> Patreon</a>
-                      <span class="abx-sponsor-btn abx-sponsor-btn-monero" id="about-monero-btn" style="cursor:pointer;">
-                        <i class="fab fa-monero"></i> Monero
-                      </span>
-                    </div>
-                  </div>
-                </div>
+                <div class="abx-legal">Chance OS is a fork of YukiOS by Reeyuki, used under the MIT License. The original copyright and license notice are kept in the LICENSE file. Source of the original project: github.com/Reeyuki/YukiOS</div>
               </div>
             </div>
 
@@ -188,24 +174,6 @@ export class AboutApp extends BaseApp {
       </div>
     `;
 
-    const moneroBtn = $("#about-monero-btn", win);
-    if (moneroBtn) {
-      bindEvent(moneroBtn, "click", () => {
-        const address =
-          "4B5RKGR4C5WDkHGKVemU4rDcnKDG5NbwBLogE1tnxAWJAqbLPpNiDNaVZC1jrfwSdB7Sh1ALQNe3TMMvhdEJTPRcAUJhyVm";
-        navigator.clipboard
-          .writeText(address)
-          .then(() => {
-            moneroBtn.innerHTML = '<i class="fab fa-monero"></i> Copied!';
-            setTimeout(() => {
-              moneroBtn.innerHTML = '<i class="fab fa-monero"></i> Monero';
-            }, 2000);
-          })
-          .catch(() => {
-            os.dialog.alert("Monero Address", address);
-          });
-      });
-    }
 
     const creditsSection = $("#about-credits-section", win);
     if (creditsSection) {

@@ -1127,7 +1127,7 @@ export class GameUI {
 
   async openFriendsWindow(wm) {
     if (isSocialDisabled()) {
-      os.notify.send("Social features are disabled", "Enable them in Yuki Steam Settings to use Friends & Chat.", {
+      os.notify.send("Social features are disabled", "Enable them in Chance Steam Settings to use Friends & Chat.", {
         type: "info"
       });
       return;

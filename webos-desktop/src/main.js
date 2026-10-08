@@ -35,13 +35,11 @@ import logoImg from "./assets/logo.png";
 import { initializeOSBridge, setDialogExplorerApp } from "./os/index.js";
 import { loadApps } from "./AppLoader.js";
 import { init } from "./cursorEffect.js";
-import { versionChecker } from "./versionChecker.js";
 import { $, createElement } from "./shared/domUtils.js";
 import { StorageKeys } from "./StorageKeys.js";
 import { ServiceKeys } from "./ServiceKeys.js";
 import { showBootScreen } from "./bootScreen.js";
 import { deckCapture } from "./modes/steamdeck/deckCapture.js";
-import { initPopunder } from "./ads.js";
 import { tabCloak } from "./stealth/tabCloak.js";
 import { bus } from "./core/EventBus.js";
 import { trayManager } from "./tray/tray.js";
@@ -213,9 +211,7 @@ async function start() {
   await sessionPromise;
 
   batteryPerformanceManager.init();
-  versionChecker.start();
   menuBar.init();
-  setTimeout(() => initPopunder(), 5000);
 
   const url = new URL(location.href);
 

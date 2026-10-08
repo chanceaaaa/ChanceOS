@@ -567,7 +567,7 @@ class GameWindowRenderer {
     this.newsItems =
       STEAM_NEWS_ITEMS.length > 0
         ? STEAM_NEWS_ITEMS.flat()
-        : [{ image: "fas fa-snowflake", title: "Yuki Steam App Added", date: "May 1, 2026" }];
+        : [{ image: "fas fa-snowflake", title: "Chance Steam App Added", date: "May 1, 2026" }];
     this.imgObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -597,7 +597,7 @@ class GameWindowRenderer {
       return descriptionMap[appId];
     }
     const title = appMap[appId]?.title || appId;
-    return `Experience ${title} on YukiOS. This game is part of your Yuki Steam library.`;
+    return `Experience ${title} on Chance OS. This game is part of your Chance Steam library.`;
   }
 
   setCurrentGame(appId) {

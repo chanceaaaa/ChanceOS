@@ -361,7 +361,7 @@ export function initDropdowns(container, navigateTo, openFriendsWindow, wm) {
         { id: "up-friends", action: "up-friends", label: "Friends & Chat", icon: "fa-user-group" },
         { id: "up-settings", action: "up-settings", label: "Settings", icon: "fa-gear" },
         { id: "up-account", action: "up-account", label: "Account", icon: "fa-user-lock" },
-        { id: "up-social-tour", action: "up-social-tour", label: "Yuki Steam Tour", icon: "fa-question-circle" }
+        { id: "up-social-tour", action: "up-social-tour", label: "Chance Steam Tour", icon: "fa-question-circle" }
       ];
       const handlers = {
         "up-my-profile": () => navigateTo("user"),

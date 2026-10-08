@@ -63,9 +63,9 @@ export const defaultStorage = {
       kind: FileKind.TEXT,
       icon: "static/icons/notepad.webp"
     },
-    "YukiOS.md": {
+    "Chance OS.md": {
       type: "file",
-      content: typeof __README_CONTENT__ !== "undefined" ? __README_CONTENT__ : "# YukiOS\n",
+      content: typeof __README_CONTENT__ !== "undefined" ? __README_CONTENT__ : "# Chance OS\n",
       kind: FileKind.TEXT,
       icon: "static/icons/notepad.webp"
     },

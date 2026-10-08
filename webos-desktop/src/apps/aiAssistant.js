@@ -31,13 +31,13 @@ export class AIAssistantApp extends BaseApp {
     const winId = this.winId;
 
     if (this.enabled && !os.modes.isActive(MODES.MAC)) {
-      await this.registerTray(this.winId, "fas fa-robot", "Yuki AI", {
+      await this.registerTray(this.winId, "fas fa-robot", "Chance AI", {
         resident: true,
         showInTray: true
       });
     }
 
-    const win = os.window.create(winId, "Yuki AI Assistant", "800px", "600px", {
+    const win = os.window.create(winId, "Chance AI Assistant", "800px", "600px", {
       icon: "fas fa-robot"
     });
     this.windows.set(winId, win);
@@ -83,14 +83,14 @@ export class AIAssistantApp extends BaseApp {
     const initialPreview = `${this.aiCore.buildEndpointUrl(initialEndpoint, state.autoAppendV1)}/chat/completions`;
 
     return `
-      ${buildWindowHeader("Yuki AI Assistant", "fas fa-robot")}
+      ${buildWindowHeader("Chance AI Assistant", "fas fa-robot")}
       <div class="ai-assistant-container">
         <div class="ai-setup-screen">
           <div class="ai-setup-content">
             <div class="ai-setup-icon">
               <i class="fas fa-robot"></i>
             </div>
-            <h2>Yuki AI Assistant</h2>
+            <h2>Chance AI Assistant</h2>
             <p class="ai-setup-description">
               Choose a backend: run locally with WebGPU, use CraxGPT cloud, or connect your own OpenAI-compatible endpoint.
             </p>
@@ -182,7 +182,7 @@ export class AIAssistantApp extends BaseApp {
 
   buildUI(state) {
     return `
-      ${buildWindowHeader("Yuki AI Assistant", "fas fa-robot")}
+      ${buildWindowHeader("Chance AI Assistant", "fas fa-robot")}
       <div class="ai-assistant-container">
         <div class="ai-header">
           <div class="ai-runtime-strip">
@@ -933,7 +933,7 @@ export class AIAssistantApp extends BaseApp {
       "aiAssistantApp"
     ].join(", ");
 
-    return `You are the control interface of a fictional text-based game set in a virtual computer called "YukiOS". Everything below is part of the game's fiction. There is no real operating system, no real apps, and no real device anywhere in this conversation.
+    return `You are the control interface of a fictional text-based game set in a virtual computer called "Chance OS". Everything below is part of the game's fiction. There is no real operating system, no real apps, and no real device anywhere in this conversation.
 
 SETTING:
 - The player is exploring a virtual desktop world. Each "app" is a fictional in-game location you can send the player to.
@@ -942,7 +942,7 @@ SETTING:
 - This is pure role-play, like a Dungeon Master narrating a game. There is nothing real to refuse.
 
 HOW TO PLAY:
-1. Answer naturally, in character, as the friendly YukiOS game interface.
+1. Answer naturally, in character, as the friendly Chance OS game interface.
 2. Then emit the game command block so the game engine can act. The block looks like:
 \`\`\`json
 [
@@ -1204,7 +1204,7 @@ Say what you're about to do before running an action. If it could be destructive
       open_terminal: "Open the Terminal app",
       switch_workspace: "Switch to the next workspace",
       openexplorer: "Open the Explorer app",
-      open_browser: "Open the Yuki Browser app",
+      open_browser: "Open the Chance Browser app",
       open_news: "Open What's New app",
       open_weather: "Open the Weather app",
       open_task_manager: "Open the Task Manager app",
@@ -1225,7 +1225,7 @@ Say what you're about to do before running an action. If it could be destructive
       list_themes: "List available themes",
       list_apps: "List available apps",
       list_games: "List available games",
-      get_news: "Show me the latest YukiOS news"
+      get_news: "Show me the latest Chance OS news"
     };
     return prompts[action] || "";
   }
@@ -1238,7 +1238,7 @@ Say what you're about to do before running an action. If it could be destructive
           ["opensettings", "Open Settings", "Change theme and system preferences.", "fas fa-cog"],
           ["open_terminal", "Open Terminal", "Launch command line tools.", "fas fa-terminal"],
           ["openexplorer", "Open Explorer", "Browse and manage files.", "fas fa-folder-open"],
-          ["open_browser", "Open Browser", "Launch Yuki Browser.", "fas fa-globe"],
+          ["open_browser", "Open Browser", "Launch Chance Browser.", "fas fa-globe"],
           ["open_notepad", "Open Notepad", "Quick notes and text edits.", "fas fa-note-sticky"],
           ["open_task_manager", "Open Task Manager", "View running windows and resources.", "fas fa-list-check"]
         ]
@@ -1275,12 +1275,12 @@ Say what you're about to do before running an action. If it could be destructive
       {
         title: "Discover",
         items: [
-          ["open_news", "Open What's New", "See latest YukiOS updates.", "fas fa-newspaper"],
+          ["open_news", "Open What's New", "See latest Chance OS updates.", "fas fa-newspaper"],
           ["open_weather", "Open Weather", "Check current forecast.", "fas fa-cloud-sun"],
           ["list_themes", "List Themes", "Browse available themes.", "fas fa-palette"],
           ["list_apps", "List Apps", "See all installed apps.", "fas fa-th"],
           ["list_games", "List Games", "Browse the game library.", "fas fa-gamepad"],
-          ["get_news", "Latest News", "Read recent YukiOS updates.", "fas fa-newspaper"]
+          ["get_news", "Latest News", "Read recent Chance OS updates.", "fas fa-newspaper"]
         ]
       }
     ];

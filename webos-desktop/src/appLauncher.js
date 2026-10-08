@@ -406,13 +406,13 @@ export class AppLauncher {
     const appId = "yukiDevTools";
     if (this.bringToFrontIfExists(appId)) return;
 
-    const title = this.appMap[appId]?.title || "Yuki Dev Tools";
+    const title = this.appMap[appId]?.title || "Chance Dev Tools";
     let iframeUrl = YUKI_DEV_TOOLS_URL;
 
     try {
       iframeUrl = await yukiITDevToolsBridge(YUKI_DEV_TOOLS_URL);
     } catch (err) {
-      console.error("Failed to build bridged Yuki Dev Tools iframe", err);
+      console.error("Failed to build bridged Chance Dev Tools iframe", err);
     }
 
     const contentHtml = `<iframe src="${iframeUrl}" ${IFRAME_ATTRS}></iframe>`;
@@ -621,7 +621,7 @@ player.load("${swfPath}");
         });
 
         const overlayBtnHtml = isGame
-          ? `<button class="overlay-open-btn" title="Yuki Steam Overlay (Shift+Tab)"><i class="fab fa-steam"></i></button>`
+          ? `<button class="overlay-open-btn" title="Chance Steam Overlay (Shift+Tab)"><i class="fab fa-steam"></i></button>`
           : "";
 
         win.innerHTML = `
@@ -805,7 +805,7 @@ player.load("${swfPath}");
     const iconHtml = this.buildWindowIconHtml(resolvedIcon, { margin: "8px" });
 
     const overlayBtnHtml = isGame
-      ? `<button class="overlay-open-btn" title="Yuki Steam Overlay (Shift+Tab)"><i class="fab fa-steam"></i></button>`
+      ? `<button class="overlay-open-btn" title="Chance Steam Overlay (Shift+Tab)"><i class="fab fa-steam"></i></button>`
       : "";
 
     win.innerHTML = `

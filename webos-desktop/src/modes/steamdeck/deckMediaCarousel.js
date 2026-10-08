@@ -262,7 +262,7 @@ async function renderCarouselOverlay(container, startIndex) {
       }
     });
     const meta = currentMeta();
-    setText(sourceEl, meta.source || "Yuki Steam Client");
+    setText(sourceEl, meta.source || "Chance Steam Client");
     setText(capturedEl, `CAPTURED ${formatCaptureDate(toTimestamp(null, meta))}`);
   };
 

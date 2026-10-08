@@ -365,7 +365,7 @@ export const descriptionMap = {
     "Made by reeyuki! Enter a fast-paced roguelike survival where you control a wandering ghost battling relentless waves of enemies. Move through cursed lands while your spectral weapons automatically strike anything that comes near.",
   voraxier:
     "Made by reeyuki! Devour humans, collect meat & gems, evolve claws, tails & turrets, spawn bots, gather spaceship parts, and claim idle & daily rewards to conquer new planets",
-  yukiJump: "Made by reeyuki! Yuki Jump Helix is a platformer casual game.",
+  yukiJump: "Made by reeyuki! Chance Jump Helix is a platformer casual game.",
   thereIsNoGame:
     "There Is No Game: Wrong Dimension is a 2020 meta point-and-click adventure by Draw Me a Pixel. The game insists it doesn't exist, while the narrator argues with the player across multiple genres.",
   tinyFishing:
@@ -408,20 +408,20 @@ export const descriptionMap = {
   weatherApp: "Real-time weather and forecasts served up in a clean, no-nonsense dashboard.",
   calculatorApp: "Quick arithmetic and everyday calculations, modeled after classic OS calculators.",
   settingsApp: "Tweak themes, behavior, and system preferences from one central panel.",
-  aboutApp: "Version numbers, developer credits, and the story behind YukiOS.",
+  aboutApp: "Version numbers, developer credits, and the story behind Chance OS.",
   newsApp: "Catch up on what's new with changelogs, features, and recent updates at a glance.",
   explorer: "Browse, organize, and manage your virtual files with familiar folder navigation.",
   notepad: "Jot down notes, draft ideas, or edit plain text without any fuss.",
-  browserApp: "Surf the web from inside your virtual desktop with the built-in Yuki Browser.",
-  yukiDevTools: "Yuki Dev Tools loads IT Tools in a themed iframe and keeps it synced with YukiOS CSS variables.",
+  browserApp: "Surf the web from inside your virtual desktop with the built-in Chance Browser.",
+  yukiDevTools: "Chance Dev Tools loads IT Tools in a themed iframe and keeps it synced with Chance OS CSS variables.",
   terminal: "Fire up the command line for scripts, system commands, and developer tools.",
   music: "Stream and play audio while you work, browse, or relax on the desktop.",
   cameraApp: "Snap screenshots or record webcam footage right from your desktop.",
-  steamApp: "Your game library, wrapped in a Steam-style storefront interface built right into YukiOS.",
+  steamApp: "Your game library, wrapped in a Steam-style storefront interface built right into Chance OS.",
   flash: "Classic Flash games live on through Ruffle and Flashpoint Archive, all in one hub.",
   vscode:
     "Visual Studio Code is a free, lightweight code editor by Microsoft, released in 2015. It supports virtually every programming language with extensions, debugging, and integrated Git.",
-  yukiCode: "A Monaco-powered code editor built into YukiOS, based on the same engine that runs Visual Studio Code.",
+  yukiCode: "A Monaco-powered code editor built into Chance OS, based on the same engine that runs Visual Studio Code.",
   jsDosApp:
     "JsDos is a JavaScript port of the DOSBox emulator, allowing classic DOS programs and games to run natively inside a web browser.",
   v86app:

@@ -53,7 +53,7 @@ const THEME_VARS = [
 
 const DIRECT_LOAD_DOMAINS = ["reeyuki.github.io", "reeyuki.neocities.org"];
 const DEFAULT_BOOKMARK_URL = "https://reeyuki.github.io/YukiOS-AlphaHistorical/desktop/";
-const DEFAULT_BOOKMARK_NAME = "YukiOS Alpha Historical";
+const DEFAULT_BOOKMARK_NAME = "Chance OS Alpha Historical";
 
 function isDirectLoadUrl(url) {
   try {

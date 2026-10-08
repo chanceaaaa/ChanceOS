@@ -325,5 +325,7 @@ export const StorageKeys = {
   panicUrl: "yukiOS_panic_url",
   autoCloakOnBoot: "yukiOS_auto_cloak_on_boot",
   boxedWineLastApp: "yukiOS_boxedwine_last_app",
-  webAppMusicMuted: "yukiOS_webapp_music_muted"
+  webAppMusicMuted: "yukiOS_webapp_music_muted",
+  chanceSnakeBest: "yukiOS_chance_snake_best",
+  chanceMemoryBest: "yukiOS_chance_memory_best"
 };

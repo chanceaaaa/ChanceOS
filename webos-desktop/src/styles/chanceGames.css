@@ -1,0 +1,90 @@
+.cg-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+  padding: 16px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.cg-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 360px;
+  gap: 12px;
+}
+
+.cg-btn {
+  padding: 6px 14px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-md);
+  background: var(--brand);
+  color: var(--text-primary);
+  font: inherit;
+  cursor: pointer;
+}
+
+.cg-btn:hover {
+  background: var(--brand-hover);
+}
+
+.cg-btn:focus-visible,
+.cg-canvas:focus-visible,
+.cg-card:focus-visible {
+  outline: 2px solid var(--brand-glow);
+  outline-offset: 2px;
+}
+
+.cg-canvas {
+  max-width: 100%;
+  border: 2px solid var(--border-strong);
+  border-radius: var(--r-md);
+  background: var(--bg-primary);
+  touch-action: none;
+}
+
+.cg-hint {
+  font-size: 12px;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.cg-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  width: 100%;
+  max-width: 340px;
+}
+
+.cg-card {
+  aspect-ratio: 1;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.cg-card:hover {
+  background: var(--bg-elev-3);
+}
+
+.cg-card.cg-open {
+  background: var(--bg-elev-2);
+  border-color: var(--brand);
+}
+
+.cg-card.cg-done {
+  background: var(--brand-dim);
+  border-color: var(--brand);
+  cursor: default;
+}

@@ -65,7 +65,7 @@ export const APP_MANIFESTS = [
     windowIdPatterns: ["news"],
     category: "help",
     clippy: { message: "Catch up on the latest changes and see what shipped.", animation: ClippyAnimation.Show },
-    description: "Displays system updates, release notes, and changelog entries for YukiOS features and improvements."
+    description: "Displays system updates, release notes, and changelog entries for Chance OS features and improvements."
   },
   {
     serviceKey: "calculatorApp",
@@ -138,7 +138,7 @@ export const APP_MANIFESTS = [
     serviceKey: "monacoApp",
     enhanced: true,
     type: "system",
-    title: "Yuki Code",
+    title: "Chance Code",
     icon: "papirus:apps/vscode",
     launchType: "instance",
     windowIdPatterns: ["monaco"],
@@ -152,7 +152,7 @@ export const APP_MANIFESTS = [
     serviceKey: "emulatorApp",
     enhanced: true,
     type: "system",
-    title: "Yuki Emulator",
+    title: "Chance Emulator",
     icon: `${CDN_BASE}/static/icons/emulator.webp`,
     launchType: "instance",
     windowIdPatterns: ["emulator"],
@@ -207,7 +207,7 @@ export const APP_MANIFESTS = [
     serviceKey: "yukiConvertApp",
     enhanced: false,
     type: "system",
-    title: "Yuki Convert",
+    title: "Chance Convert",
     icon: "papirus:actions/swap-panels",
     launchType: "instance",
     windowIdPatterns: ["yuki-convert"],
@@ -228,7 +228,7 @@ export const APP_MANIFESTS = [
     windowIdPatterns: ["setup", "setup-wizard"],
     category: "help",
     clippy: { message: "Walk through setup and get the basics out of the way.", animation: ClippyAnimation.Greeting },
-    description: "Initial setup guide for new users to configure YukiOS preferences."
+    description: "Initial setup guide for new users to configure Chance OS preferences."
   },
   {
     serviceKey: "dataEditorApp",
@@ -246,13 +246,13 @@ export const APP_MANIFESTS = [
     serviceKey: "yukiOsGuideApp",
     enhanced: true,
     type: "system",
-    title: "YukiOS Guide",
+    title: "Chance OS Guide",
     icon: "papirus:apps/accessories-dictionary",
     launchType: "instance",
     windowIdPatterns: ["yuki-os-guide", "yukios-guide"],
     category: "help",
     clippy: { message: "Open the guide and learn the parts that matter fastest.", animation: ClippyAnimation.Show },
-    description: "Comprehensive documentation and feature discovery hub for YukiOS."
+    description: "Comprehensive documentation and feature discovery hub for Chance OS."
   },
   {
     serviceKey: "introTourApp",
@@ -274,7 +274,7 @@ export const APP_MANIFESTS = [
     launchType: "instance",
     windowIdPatterns: [],
     category: "system",
-    description: "Switch between desktop modes: MacOS, SteamDeck, ChromeOS, Tiling, and YukiOS default."
+    description: "Switch between desktop modes: MacOS, SteamDeck, ChromeOS, Tiling, and Chance OS default."
   },
   {
     serviceKey: "clipboardManagerApp",
@@ -295,7 +295,7 @@ export const APP_MANIFESTS = [
     serviceKey: "aiAssistantApp",
     enhanced: false,
     type: "system",
-    title: "Yuki AI Assistant",
+    title: "Chance AI Assistant",
     icon: "papirus:apps/gnome-robots",
     launchType: "instance",
     windowIdPatterns: ["ai-assistant"],
@@ -381,7 +381,7 @@ export const APP_MANIFESTS = [
   {
     serviceKey: "browserApp",
     type: "system",
-    title: "Yuki Browser",
+    title: "Chance Browser",
     icon: `${CDN_BASE}/static/icons/chrome.webp`,
     launchType: "instance",
     windowIdPatterns: ["scramjet-window", "browser"],
@@ -393,7 +393,7 @@ export const APP_MANIFESTS = [
       message: "Select Tor from the proxy dropdown to browse anonymously. I'll handle the setup.",
       animation: ClippyAnimation.Wave
     },
-    description: "CORS proxy browser with bookmarks, history, tab management, and Tor anonymous browsing within YukiOS."
+    description: "CORS proxy browser with bookmarks, history, tab management, and Tor anonymous browsing within Chance OS."
   },
   {
     serviceKey: "discordApp",
@@ -987,14 +987,14 @@ export const APP_MANIFESTS = [
   {
     serviceKey: "yukiDevToolsApp",
     type: "system",
-    title: "Yuki Dev Tools",
+    title: "Chance Dev Tools",
     icon: "papirus:apps/vscode",
     launchType: "method",
     launchMethod: "openYukiDevToolsApp",
     windowIdPatterns: ["yukidevtools", "yuki-dev-tools"],
     category: "development",
     clippy: {
-      message: "Open IT Tools with Yuki styling and a live iframe bridge.",
+      message: "Open IT Tools with Chance styling and a live iframe bridge.",
       animation: ClippyAnimation.GetWizardy
     },
     description: "IT Tools wrapped in a Yuki-themed iframe with live CSS bridging."
@@ -1067,14 +1067,14 @@ export const APP_MANIFESTS = [
   {
     serviceKey: "steamApp",
     type: "system",
-    title: "Yuki Steam",
+    title: "Chance Steam",
     icon: "papirus:apps/steam",
     launchType: "steam",
     windowIdPatterns: ["games-app"],
     category: "games",
     clippy: { message: "Browse game picks here and find something worth launching.", animation: ClippyAnimation.Wave },
     description:
-      "Game storefront and launcher interface for browsing, managing, and launching games through Yuki Steam integration."
+      "Game storefront and launcher interface for browsing, managing, and launching games through Chance Steam integration."
   },
   {
     serviceKey: "appCreatorApp",
@@ -1181,6 +1181,30 @@ export const APP_MANIFESTS = [
       animation: ClippyAnimation.Show
     },
     description: "Nintendo 3DS emulator for playing 3DS games in the browser."
+  },
+  {
+    serviceKey: "chanceSnakeApp",
+    enhanced: true,
+    type: "system",
+    title: "Snake",
+    icon: "fas fa-gamepad",
+    launchType: "instance",
+    windowIdPatterns: ["chance-snake"],
+    category: "games",
+    clippy: { message: "Steer the snake and chase a new best score.", animation: ClippyAnimation.Show },
+    description: "Classic snake with keyboard and swipe controls and a saved best score."
+  },
+  {
+    serviceKey: "chanceMemoryApp",
+    enhanced: true,
+    type: "system",
+    title: "Memory Match",
+    icon: "fas fa-clone",
+    launchType: "instance",
+    windowIdPatterns: ["chance-memory"],
+    category: "games",
+    clippy: { message: "Flip cards and find every matching pair.", animation: ClippyAnimation.Show },
+    description: "Card matching game that tracks your fewest moves."
   },
   {
     serviceKey: "clockApp",
@@ -1466,7 +1490,7 @@ export const APP_MANIFESTS = [
     serviceKey: "remoteHostApp",
     enhanced: true,
     type: "system",
-    title: "Yuki Remote Desktop",
+    title: "Chance Remote Desktop",
     icon: "papirus:devices/computer",
     launchType: "instance",
     windowIdPatterns: ["remote-host"],

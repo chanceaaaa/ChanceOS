@@ -1543,7 +1543,7 @@ export class SteamDeckManager {
     await new Promise((resolve) => setTimeout(resolve, 500));
     const { disableSteamDeckSettings } = await import("./session.js");
     disableSteamDeckSettings();
-    os.storage.set(StorageKeys.selectedSession, "Yuki Desktop(Default)");
+    os.storage.set(StorageKeys.selectedSession, "Chance Desktop(Default)");
   }
 
   startPollers() {

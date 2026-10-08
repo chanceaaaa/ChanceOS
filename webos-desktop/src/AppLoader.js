@@ -36,6 +36,8 @@ import { ScreenshotApp } from "./apps/screenshot.js";
 import { MapsApp } from "./apps/maps.js";
 import { ErudaApp } from "./apps/eruda.js";
 import { ClockApp } from "./apps/clock.js";
+import { ChanceSnakeApp } from "./apps/chanceSnake.js";
+import { ChanceMemoryApp } from "./apps/chanceMemory.js";
 import { TorBrowserApp } from "./apps/torBrowser.js";
 import { DiscordApp } from "./apps/discord.js";
 import { RobloxApp } from "./apps/roblox.js";
@@ -91,6 +93,8 @@ const APP_CLASS_MAP = {
   mapsApp: MapsApp,
   erudaApp: ErudaApp,
   clockApp: ClockApp,
+  chanceSnakeApp: ChanceSnakeApp,
+  chanceMemoryApp: ChanceMemoryApp,
   torBrowserApp: TorBrowserApp,
   discordApp: DiscordApp,
   robloxApp: RobloxApp,

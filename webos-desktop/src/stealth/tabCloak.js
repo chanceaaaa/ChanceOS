@@ -123,7 +123,7 @@ class TabCloak {
     } catch {
       /* ignore */
     }
-    document.title = "YukiOS";
+    document.title = "Chance OS";
   }
 
   isCloakActive() {

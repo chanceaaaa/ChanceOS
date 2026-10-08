@@ -24,6 +24,7 @@ export function hardenAdEnvironment() {
 hardenAdEnvironment();
 
 export function shouldEnableAds() {
+  return false;
   const hostname = window.location.hostname;
   if (hostname.includes("vercel")) {
     return false;
@@ -36,6 +37,7 @@ export function shouldEnableAds() {
 }
 
 export function injectAdsterraAd(containerId, key, width, height, delay = 0, format = "iframe") {
+  return;
   const doInject = () => {
     const slot = $("#" + containerId);
     if (!slot) return;
@@ -56,6 +58,7 @@ export function injectAdsterraAd(containerId, key, width, height, delay = 0, for
 }
 
 export function injectNativeAd(containerId) {
+  return;
   const slot = $("#" + containerId);
   if (!slot) return;
   const s = createElement("script");
@@ -81,6 +84,7 @@ export function suppressAdBlocks(container) {
 }
 
 export function buildGameAdBannerHtml(key) {
+  return "";
   return `<div id="yukios-game-ad-banner">
   <div class="yukios-game-ad-label">Advertisement</div>
   <button class="yukios-game-ad-close" title="Close advertisement">&times;</button>

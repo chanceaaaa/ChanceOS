@@ -9,7 +9,7 @@ import { parseBool } from "./utils/utils.js";
 const ENDPOINT = SOCIAL_BASE + "/analytics";
 const DOWNLOAD_ENDPOINT = SOCIAL_BASE + "/api/download";
 const ELECTRON_USAGE_ENDPOINT = SOCIAL_BASE + "/api/electron-usage";
-const ANALYTICS_DISABLED = () => parseBool(os.storage.get(StorageKeys.analyticsDisabled));
+const ANALYTICS_DISABLED = () => true;
 const FLUSH_INTERVAL_MS = 5000;
 const MAX_QUEUE_SIZE = 15;
 const SEND_FAIL_THRESHOLD = 5;
@@ -263,6 +263,7 @@ export function trackElectronUsage(event) {
 }
 
 export function trackElectronUsageFromMain(event) {
+  return;
   if (!event || !event.action) return;
   const payload = {
     action: event.action,

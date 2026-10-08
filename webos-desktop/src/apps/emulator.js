@@ -123,7 +123,7 @@ export class EmulatorApp extends BaseApp {
     });
     const extList = Array.from(allExtensions).sort().join(", ");
 
-    const win = os.window.create("emulator-win", "Yuki Emulator", "800px", "600px", {
+    const win = os.window.create("emulator-win", "Chance Emulator", "800px", "600px", {
       icon: EMULATOR_ICON
     });
     win.innerHTML = `

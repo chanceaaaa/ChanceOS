@@ -2062,7 +2062,7 @@ export class OfficeApp extends BaseApp {
     showAboutDialog({
       title: "Office",
       version: "1.0.0",
-      description: "YukiOS Office Suite for editing documents, spreadsheets, and presentations.",
+      description: "Chance OS Office Suite for editing documents, spreadsheets, and presentations.",
       icon: "static/icons/office.webp",
       iconType: "image"
     });
