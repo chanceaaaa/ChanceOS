@@ -9,7 +9,7 @@ const BASE = "https://yukios.netlify.app";
 
 function extractApps() {
   const content = readFileSync(resolve(ROOT, "src/registry/AppManifest.js"), "utf-8");
-  const APP_CDN = "https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main";
+  const APP_CDN = "https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main";
   const entries = [];
   let depth = 0,
     current = "",
@@ -79,7 +79,7 @@ function extractGames(gameDescs) {
     let icon = iconM ? iconM[1] : "";
     if (icon && (icon.startsWith("/") || icon.startsWith("static/"))) {
       const clean = icon.startsWith("/") ? icon.slice(1) : icon;
-      icon = `https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main/${clean}`;
+      icon = `https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main/${clean}`;
     }
     const title = titleM ? titleM[1] : key;
     const desc = (gameDescs && gameDescs[key]) || "";
@@ -676,7 +676,7 @@ const featurePages = [
   }
 ];
 
-const GH = "https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main/.github";
+const GH = "https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main/.github";
 const GAMES_CDN = "https://cdn.jsdelivr.net/gh/NaoTomori1/yukios-games@main";
 
 function resolveGameUrl(url, type) {
@@ -932,7 +932,7 @@ ${landingStyle}
       <a href="/features.html">Features</a>
       <a href="/apps.html">Apps</a>
       <a href="/games.html">Games</a>
-      <a href="https://github.com/NaoTomori1/yukios">GitHub</a>
+      <a href="https://github.com/chanceaaaa/ChanceOS">GitHub</a>
     </div>
   </header>
   <main class="seo-main">
@@ -950,7 +950,7 @@ ${landingStyle}
   </main>
   <footer class="seo-footer">
     <p>YukiOS - Free Browser-Based Desktop Environment</p>
-    <div><a href="/features.html">Features</a> &middot; <a href="https://github.com/NaoTomori1/yukios">GitHub</a> &middot; <a href="/">About</a></div>
+    <div><a href="/features.html">Features</a> &middot; <a href="https://github.com/chanceaaaa/ChanceOS">GitHub</a> &middot; <a href="/">About</a></div>
   </footer>
 </div>
 ${adSlotScript("landing-ad")}
@@ -1030,7 +1030,7 @@ function startSlideshow() {
       <a href="/features.html">Features</a>
       <a href="/apps.html">Apps</a>
       <a href="/games.html">Games</a>
-      <a href="https://github.com/NaoTomori1/yukios">GitHub</a>
+      <a href="https://github.com/chanceaaaa/ChanceOS">GitHub</a>
     </div>
   </header>
   <main class="seo-main">
@@ -1048,7 +1048,7 @@ function startSlideshow() {
   </main>
   <footer class="seo-footer">
     <p>YukiOS - Free Browser-Based Desktop Environment</p>
-    <div><a href="/features.html">Features</a> &middot; <a href="https://github.com/NaoTomori1/yukios">GitHub</a> &middot; <a href="/">About</a></div>
+    <div><a href="/features.html">Features</a> &middot; <a href="https://github.com/chanceaaaa/ChanceOS">GitHub</a> &middot; <a href="/">About</a></div>
   </footer>
 </div>
 ${adSlotScript("landing-ad")}`;
@@ -1147,7 +1147,7 @@ function makeMinimalGamePage(
       .trim()
       .toLowerCase()
       .replace(/\s+/g, "");
-    finalGameIcon = `https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main/subwaySurfers/${gameName}.webp`;
+    finalGameIcon = `https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main/subwaySurfers/${gameName}.webp`;
   }
 
   let gamePlayerHtml = "";
@@ -1343,7 +1343,7 @@ body{background:#0a0a14;color:#ccc;font-family:-apple-system,BlinkMacSystemFont,
       <a href="/features.html">Features</a>
       <a href="/games.html">Games</a>
       <a href="/apps.html">Apps</a>
-      <a href="https://github.com/NaoTomori1/yukios">GitHub</a>
+      <a href="https://github.com/chanceaaaa/ChanceOS">GitHub</a>
     </div>
   </footer>
 </div>
@@ -1577,7 +1577,7 @@ function makeCatalogPage(title, description, items, itemType, imageSize) {
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main/.github/yuki-deck.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main/.github/yuki-deck.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://yukios.netlify.app/${itemType}s.html">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -1807,7 +1807,7 @@ body{background:#0a0a14;color:#ccc;font-family:-apple-system,BlinkMacSystemFont,
   <div class="gc-nav">
     <a href="/features.html">Features</a>
     <a href="/games.html">All Games</a>
-    <a href="https://github.com/NaoTomori1/yukios">GitHub</a>
+    <a href="https://github.com/chanceaaaa/ChanceOS">GitHub</a>
   </div>
 </header>
 <main>
@@ -1823,7 +1823,7 @@ body{background:#0a0a14;color:#ccc;font-family:-apple-system,BlinkMacSystemFont,
 </main>
 <footer class="gc-footer">
   <p>YukiOS - Free Browser-Based Desktop Environment</p>
-  <div><a href="/features.html">Features</a> &middot; <a href="/games.html">All Games</a> &middot; <a href="https://github.com/NaoTomori1/yukios">GitHub</a></div>
+  <div><a href="/features.html">Features</a> &middot; <a href="/games.html">All Games</a> &middot; <a href="https://github.com/chanceaaaa/ChanceOS">GitHub</a></div>
 </footer>
 ${adSlotScript("genre-ad")}
 </body>

@@ -12,7 +12,7 @@ import {
 } from "../shared/fileKindDetector.js";
 import { ROM_EXTS } from "../shared/coreMap.js";
 
-const CDN_BASE = "https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main";
+const CDN_BASE = "https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main";
 
 export const APP_MANIFESTS = [
   {

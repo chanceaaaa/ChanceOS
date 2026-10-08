@@ -54,7 +54,7 @@ export class AchievementsApp extends BaseApp {
     super(services);
     this.achievements = this.createAchievements();
     this.unlocked = new Map();
-    this.s1 = new Audio(resolveGhUrl("https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main/static/audio/steam.opus"));
+    this.s1 = new Audio(resolveGhUrl("https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main/static/audio/steam.opus"));
 
     this.initBusListeners();
     this.thresholds = {

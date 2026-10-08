@@ -35,7 +35,7 @@ const HARDCODED_DESKTOP_ICONS = [
   {
     app: "infaredYoutubeApp",
     name: "Infared Youtube",
-    icon: "https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main/static/icons/favicons/youtube.webp"
+    icon: "https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main/static/icons/favicons/youtube.webp"
   },
   { app: "spriteFusionApp", name: "SpriteFusion Destroy", icon: "static/icons/spritefusion.ico" }
 ];

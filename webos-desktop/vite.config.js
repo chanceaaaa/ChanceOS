@@ -94,7 +94,7 @@ const isVisualize = process.env.VITE_VISUALIZE === "true";
 const isElectronBuild = process.env.VITE_ELECTRON === "true";
 const DISABLE_STEAM_NEWS_FETCH = true;
 
-const CDN_BASE = "https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main/";
+const CDN_BASE = "https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main/";
 const outDir = resolve(__dirname, "dist");
 const staticDir = resolve(__dirname, "../static");
 const remoteDir = resolve(__dirname, "remote");

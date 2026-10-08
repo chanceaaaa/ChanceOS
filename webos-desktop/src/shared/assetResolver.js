@@ -280,7 +280,7 @@ const CDN_PROVIDERS = {
       return resolveGhUrl("https://cdn.jsdelivr.net/gh/NaoTomori1/yukios-games@main");
     },
     get MAIN() {
-      return resolveGhUrl("https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main");
+      return resolveGhUrl("https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main");
     },
     get NPM() {
       return resolveNpmUrl("https://cdn.jsdelivr.net/npm");

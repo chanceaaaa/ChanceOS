@@ -794,7 +794,7 @@ class AudioMixer {
       if (this.muted || !this.systemAudioEnabled) return;
 
       const soundPath = SystemAudio[audioKey] || audioKey;
-      const audio = new Audio(resolveGhUrl(`https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main/${soundPath}`));
+      const audio = new Audio(resolveGhUrl(`https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main/${soundPath}`));
       audio.volume = this.masterVolume * this.systemVolume;
       audio.play().catch(() => {});
     } catch (e) {

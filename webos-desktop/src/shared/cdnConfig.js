@@ -12,7 +12,7 @@ export const CDN_CONFIG = {
     },
     get main() {
       return {
-        base: resolveGhUrl("https://cdn.jsdelivr.net/gh/NaoTomori1/yukios@main"),
+        base: resolveGhUrl("https://cdn.jsdelivr.net/gh/chanceaaaa/ChanceOS@main"),
         ref: "main"
       };
     },
